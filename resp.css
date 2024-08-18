@@ -301,6 +301,20 @@ header {
     color: #32b0ce;
 }
 
+.page-header {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.page-header .section-heading-sm {
+    margin-top: 15rem;
+}
+
 .about {
     width: 100%;
     background-color: #202020;
@@ -373,6 +387,9 @@ header {
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-content-right {

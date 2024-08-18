@@ -1,0 +1,164 @@
+.about-header {
+    background: linear-gradient(rgba(33,33,33,.9), rgba(33,33,33,.7)), url(images/about-bg.jpg) center no-repeat;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem 0;
+    overflow: hidden;
+}
+
+.about-section-header {
+    text-align: right;
+    padding-bottom: 10rem;
+    transform: translate(70% 50%);
+}
+
+.about-section-header .section-border::after {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+}
+
+.about-page-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.feature {
+    width: 20rem;
+    height: 20rem;
+    background-color: #181818;
+    margin: 3rem;
+    border-radius: 3rem;
+    box-shadow: .5rem 1rem rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature:nth-child(2),
+.feature:nth-child(6) {
+    transform: translateY(6rem);
+}
+
+.feature:nth-child(3),
+.feature:nth-child(7) {
+    transform: translateY(12rem);
+}
+
+.feature:nth-child(4),
+.feature:nth-child(8) {
+    transform: translateY(18rem);
+}
+
+.feature::before {
+    content:"";
+    width: 15rem;
+    height: 15rem;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
+
+.feature span {
+    z-index: 1;
+    font-size: 6rem;
+    color: #32b0c3;
+}
+
+.feature h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+}
+
+.team {
+    width: 200%;
+    height: 200rem;
+    background: linear-gradient(to bottom, rgba(33,33,33,.7), rgba(19,27,29,.9), rgba(33,33,33,.9)), url(images/team-bg.jpg) center no-repeat;
+    background-size: cover;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.9);
+}
+
+.team h1 {
+    font-family: "Kaushan Script", cursive;
+    font-size: 10rem;
+    color: #32b0c3;
+    text-shadow: 0 1rem 2rem rgba(0,0,0,.5);
+    margin: -15rem 0 15rem 0;
+}
+
+.members {
+    display: flex;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6rem;
+}
+
+.member img {
+    width: 27rem;
+    height: 27rem;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter 1s;
+}
+
+.member img:hover {
+    filter: grayscale(0);
+}
+
+.member-name {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: .1rem;
+    margin-top: 2rem;
+}
+
+.member-position {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #32b0c3;
+    letter-spacing: .1rem;
+}
+
+.footer-about {
+    margin-top: -50rem;
+}
+
+.footer-about .footer-header {
+    text-align: right;
+    transform: translateX(80%);
+}
+
+.footer-about .footer-header .section-border::after {
+    right: 0;
+    left: auto;
+    transform: translateX(0);
+}
