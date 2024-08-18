@@ -1,0 +1,17 @@
+.books-header {
+    background: linear-gradient(rgba(33,33,33,.9), rgba(33,33,33,.7)), url(images/books-bg.jpg) center no-repeat;
+}
+
+.books-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+}
+
+.books-section .books-list {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
