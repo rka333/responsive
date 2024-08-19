@@ -1,8 +1,27 @@
 const menuIcon = document.querySelector('.menu-icon')
 const container = document.querySelector('.container')
+const contactLink = document.querySelector('.navigation a:last-child')
 
 menuIcon.addEventListener("click",()=>{
     container.classList.toggle("navigate")
+})
+
+contactLink.addEventListener("click", () => {
+    container.classList.remove("navigate")
+})
+
+const loader = document.querySelector(".loader-wrapper")
+
+window.addEventListener("load", () => {
+    const body = document.querySelector(".body")
+    setTimeout(() => {
+        loader.classList.add("hide")
+    }, 6000)
+
+    setTimeout(() => {
+        container.classList.add("show")
+        body.style.overflow = "auto"
+    }, 5500)
 })
 
 const slider = document.querySelector('.slider')

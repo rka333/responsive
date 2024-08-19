@@ -190,10 +190,12 @@
 
 .controls i:nth-child(1) {
     left: 15%;
+    cursor: pointer;
 }
 
 .controls i:nth-child(2) {
     right: 15%;
+    cursor: pointer;
 }
 
 .dots {

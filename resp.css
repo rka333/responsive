@@ -25,10 +25,94 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
+.body {
+    overflow: hidden;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.hide.loader-wrapper {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 40%;
+    height: .1rem;
+    background-color: #fff;
+    transform: scaleX(0);
+    animation: loader 5s 0.5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    20% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    25% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    45% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    50% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+
+    70% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    75% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
+
 .container {
     width: 100%;
     height: 100%;
     background-color: #212121;
+    position: relative;
+}
+
+.show.main-container {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-container {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
 }
 
 .menu-icon {
@@ -1079,6 +1163,7 @@ textarea {
 
     .testimonials {
         height: 125vh;
+        position: relative;
     }
 
     .testimonials .section-num {
@@ -1123,6 +1208,13 @@ textarea {
         width: 30rem;
         font-size: 1.4rem;
         margin-bottom: 3.5rem;
+    }
+
+    .testimonials .main-btn {
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
     }
 
     .footer-content {
@@ -1170,5 +1262,6 @@ textarea {
 
     .testimonials {
         height: 150vh;
+        position: relative;
     }
 }
