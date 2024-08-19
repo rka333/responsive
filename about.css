@@ -291,10 +291,6 @@
         align-items: center;
         flex-wrap: wrap;
     }
-
-    .member {
-        margin: 4rem 6rem;
-    }
 }
 
 @media(max-width: 430px) {

@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb {
     height: 2rem;
     position: fixed;
     top: 7rem;
-    right: 15rem;
+    right: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
