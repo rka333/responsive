@@ -1078,7 +1078,7 @@ textarea {
     }
 }
 
-@media(max-width: 430px) {
+@media(min-width: 374px) and (max-width: 435px) {
     html {
         font-size: 42%;
     }
